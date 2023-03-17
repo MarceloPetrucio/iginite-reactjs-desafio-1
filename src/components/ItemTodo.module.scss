@@ -1,0 +1,67 @@
+.itemTodo {
+  background-color: var(--gray-500);
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+
+  button {
+    width: 24px;
+    height: 24px;
+    background: var(--gray-500);
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+}
+
+.information {
+  display: flex;
+  align-items: start;
+  gap: 12px;
+
+  .detail {
+    color: var(--gray-100);
+    font-size: 14px;
+  }
+}
+
+.check {
+  min-height: 17.5px;
+  min-width: 17.5px;
+  border: 1px solid var(--blue);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .checkMark {
+    display: none;
+  }
+}
+
+.dataChecked {
+  .check {
+    border: 1px solid var(--purpledark);
+    background-color: var(--purpledark);
+
+    .checkMark {
+      height: 17.5px;
+      width: 17.5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 12px;
+      }
+    }
+  }
+
+  .detail {
+    color: var(--gray-300);
+    text-decoration: line-through;
+  }
+}

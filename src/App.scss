@@ -1,0 +1,102 @@
+.header {
+  height: 200px;
+  background-color: var(--gray-700);
+
+  display: flex;
+  align-items: start;
+  justify-content: center;
+
+  padding-top: 72px;
+}
+
+main {
+  margin-top: -27px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .content {
+    width: 736px;
+    flex-direction: column;
+    align-items: stretch;
+
+    form {
+      display: flex;
+      gap: 8px;
+
+      input {
+        flex: 1;
+        background-color: var(--gray-500);
+        height: 54px;
+        border-radius: 8px;
+        border: none;
+        padding: 16px;
+        color: var(--gray-300);
+      }
+
+      button {
+        width: 90px;
+        background-color: var(--blue-dark);
+        border: none;
+        border-radius: 8px;
+        font-size: 14px;
+        color: var(--gray-100);
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+        align-items: center;
+        transition: filter 0.1s;
+        cursor: pointer;
+      }
+
+      button:hover {
+        filter: brightness(1.1);
+      }
+    }
+
+    section {
+      margin-top: 64px;
+      display: flex;
+      flex-direction: column;
+      gap: 26px;
+
+      .info-list {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .tasks-info {
+        font-size: 14px;
+        font-weight: bold;
+        display: flex;
+        gap: 8px;
+        align-items: center;
+      }
+
+      .task-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .tasks-create {
+        color: var(--blue);
+      }
+
+      .tasks-finish {
+        color: var(--purple);
+      }
+
+      .task-counter {
+        padding: 2px 8px;
+        background: var(--gray-400);
+        border-radius: 999px;
+        color: var(--gray-200);
+        font-size: 12px;
+        line-height: 15px;
+        font-weight: bold;
+      }
+    }
+  }
+}
